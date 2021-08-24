@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.exmaple.bootmongnyang.mapper.PostMapper">
+    <select id="selectPostById" parameterType="Integer" resultType="com.example.bootmongnyang.model.Post">
+        SELECT post_id, title, user_id, create_time, read_cnt, post_type, region, post_status
+        FROM post
+        WHERE post_id = #{id}
+    </select>
+</mapper>
