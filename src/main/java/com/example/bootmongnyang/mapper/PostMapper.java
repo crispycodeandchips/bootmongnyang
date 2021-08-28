@@ -6,4 +6,5 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface PostMapper {
     Post selectPostById(Integer id);
+    void updateReadCntById(Integer id);
 }

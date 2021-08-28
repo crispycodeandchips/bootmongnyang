@@ -13,9 +13,10 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+//sql 과 매핑되는 DAO class
 public class Post {
 
-    private String category;
+    private String categoryName;
     private String title;
     private String contents;
     private String userId;

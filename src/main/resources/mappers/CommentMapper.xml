@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.bootmongnyang.mapper.CommentMapper">
+    <select id="selectCommentsByPostId" parameterType="Integer" resultType="com.example.bootmongnyang.model.Comment">
+        select user_id, create_time, contents
+        from comment
+        where post_id = #{postId};
+    </select>
+</mapper>
